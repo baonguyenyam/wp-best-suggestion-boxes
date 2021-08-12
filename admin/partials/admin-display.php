@@ -15,11 +15,11 @@
 <div class="wrap">
     <div id="wp-content-editor-tools" class="wp-heading">
         <div class="alignleft">
-            <h2><?=BEST_SUGGESTION_BOXES_NICENAME?></h2>
+            <h2><?=esc_html__('Screens and Suggestions', BEST_SUGGESTION_BOXES_DOMAIN )?></h2>
         </div>
         <div class="alignright">
-            <a href="admin.php?page=best-suggestion-boxes-screen" class="button button-primary">Add New Screen</a>
-            <a href="admin.php?page=best-suggestion-boxes-suggest" class="button button-primary">Add New Suggest</a>
+            <a href="admin.php?page=best-suggestion-boxes-screen" class="button button-primary"><?=esc_html__('Add New Screen', BEST_SUGGESTION_BOXES_DOMAIN )?></a>
+            <a href="admin.php?page=best-suggestion-boxes-suggest" class="button button-primary"><?=esc_html__('Add New Suggest', BEST_SUGGESTION_BOXES_DOMAIN )?></a>
         </div>
         <div class="clear"></div>
     </div>
@@ -41,8 +41,8 @@ foreach ( $resultsGroup as $groupItem ) {
             <h2><?php echo $groupItem->group_content; ?></h2>
         </div>
         <div class="alignright">
-            <a href="admin.php?page=best-suggestion-boxes-screen&id=<?php echo $groupItem->group_id?>&action=edit">Edit</a>
-            <a href="admin.php?page=best-suggestion-boxes-screen&id=<?php echo $groupItem->group_id?>&action=delete">Delete</a>
+            <a href="admin.php?page=best-suggestion-boxes-screen&id=<?php echo $groupItem->group_id?>&action=edit"><?=esc_html__('Edit', BEST_SUGGESTION_BOXES_DOMAIN )?></a>
+            <a href="admin.php?page=best-suggestion-boxes-screen&id=<?php echo $groupItem->group_id?>&action=delete"><?=esc_html__('Delete', BEST_SUGGESTION_BOXES_DOMAIN )?></a>
         </div>
         <div class="clear"></div>
     </div>
@@ -58,16 +58,16 @@ foreach ( $resultsGroup as $groupItem ) {
         echo '<table class="nguyenapp-table">';
         echo '<thead>
         <tr>
-        <td>Suggest</td>
-        <td width="200">Go to</td>
-        <td width="20">Edit</td>
-        <td width="20">Delete</td>
+        <td>'.esc_html__('Suggestions', BEST_SUGGESTION_BOXES_DOMAIN ).'</td>
+        <td width="200">'.esc_html__('Go to', BEST_SUGGESTION_BOXES_DOMAIN ).'</td>
+        <td width="20">'.esc_html__('Edit', BEST_SUGGESTION_BOXES_DOMAIN ).'</td>
+        <td width="20">'.esc_html__('Delete', BEST_SUGGESTION_BOXES_DOMAIN ).'</td>
         </tr>
         </thead>';
             foreach ( $resultsSuggest as $item ) {
                 $screenName = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$tblGroup} WHERE {$tblGroup}.group_id = $item->target_id LIMIT 1"));
             ?>
-                <tr><td><?php echo $item->suggest_content; ?></td><td><?php echo $screenName[0]->group_content ? $screenName[0]->group_content : 'N/A'; ?></td><td><a href="admin.php?page=best-suggestion-boxes-suggest&id=<?php echo $item->suggest_id?>&action=edit">Edit</a></td><td><a href="admin.php?page=best-suggestion-boxes-suggest&id=<?php echo $item->suggest_id?>&action=delete">Delete</a></td></tr>
+                <tr><td><?php echo $item->suggest_content; ?></td><td><?php echo $screenName[0]->group_content ? $screenName[0]->group_content : 'N/A'; ?></td><td><a href="admin.php?page=best-suggestion-boxes-suggest&id=<?php echo $item->suggest_id?>&action=edit"><?=esc_html__('Edit', BEST_SUGGESTION_BOXES_DOMAIN )?></a></td><td><a href="admin.php?page=best-suggestion-boxes-suggest&id=<?php echo $item->suggest_id?>&action=delete"><?=esc_html__('Delete', BEST_SUGGESTION_BOXES_DOMAIN )?></a></td></tr>
             <?php
             }
         echo '</table>';
