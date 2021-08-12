@@ -1,0 +1,27 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ .nguyenapp-table {
+    border: solid 1px #dadada;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+    background: #fff;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+.nguyenapp-table thead th, 
+.nguyenapp-table thead td {
+    background-color: #2271b1;
+    border: solid 1px #2271b1;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+.nguyenapp-table tbody tr td {
+    border: solid 1px #dadada;
+    color: #333;
+    padding: 10px;
+}
