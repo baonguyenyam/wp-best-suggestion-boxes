@@ -130,36 +130,36 @@ class Best_Suggestion_Boxes_Public {
 
 	public function __bestSuggestionBoxesChangePosition() {
 		if(carbon_get_theme_option('__best_suggestion_boxes_position') === 'bottomright') {
-			echo "<style>html #best-suggestion-boxes-box.suggestion-js-boxes .suggestion-js-boxes__body, html #best-suggestion-boxes-box.suggestion-js-boxes .suggestion-js-boxes__icon {bottom: ".carbon_get_theme_option('__best_suggestion_boxes_padding_y')."!important; right: ".carbon_get_theme_option('__best_suggestion_boxes_padding_x')."!important; max-width: calc(100% - 3em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_x').");max-height: calc(100% - 4em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_y').");}</style>";
+			echo "<style>html #best-suggestion-boxes.suggestion-js-boxes .suggestion-js-boxes__body, html #best-suggestion-boxes.suggestion-js-boxes .suggestion-js-boxes__icon {bottom: ".carbon_get_theme_option('__best_suggestion_boxes_padding_y')."!important; right: ".carbon_get_theme_option('__best_suggestion_boxes_padding_x')."!important; max-width: calc(100% - 3em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_x').");max-height: calc(100% - 4em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_y').");}</style>";
 		}
 		if(carbon_get_theme_option('__best_suggestion_boxes_position') === 'bottomleft') {
-			echo "<style>html #best-suggestion-boxes-box.suggestion-js-boxes .suggestion-js-boxes__body, html #best-suggestion-boxes-box.suggestion-js-boxes .suggestion-js-boxes__icon {bottom: ".carbon_get_theme_option('__best_suggestion_boxes_padding_y')."!important; left: ".carbon_get_theme_option('__best_suggestion_boxes_padding_x')."!important; right: initial !important; max-width: calc(100% - 3em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_x').");max-height: calc(100% - 4em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_y').");}</style>";
+			echo "<style>html #best-suggestion-boxes.suggestion-js-boxes .suggestion-js-boxes__body, html #best-suggestion-boxes.suggestion-js-boxes .suggestion-js-boxes__icon {bottom: ".carbon_get_theme_option('__best_suggestion_boxes_padding_y')."!important; left: ".carbon_get_theme_option('__best_suggestion_boxes_padding_x')."!important; right: initial !important; max-width: calc(100% - 3em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_x').");max-height: calc(100% - 4em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_y').");}</style>";
 		}
 		if(carbon_get_theme_option('__best_suggestion_boxes_position') === 'topleft') {
-			echo "<style>html #best-suggestion-boxes-box.suggestion-js-boxes .suggestion-js-boxes__body, html #best-suggestion-boxes-box.suggestion-js-boxes .suggestion-js-boxes__icon {top: ".carbon_get_theme_option('__best_suggestion_boxes_padding_y')."!important; left: ".carbon_get_theme_option('__best_suggestion_boxes_padding_x')."!important; right: initial !important; bottom: initial !important; max-width: calc(100% - 3em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_x').");max-height: calc(100% - 4em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_y').");}</style>";
+			echo "<style>html #best-suggestion-boxes.suggestion-js-boxes .suggestion-js-boxes__body, html #best-suggestion-boxes.suggestion-js-boxes .suggestion-js-boxes__icon {top: ".carbon_get_theme_option('__best_suggestion_boxes_padding_y')."!important; left: ".carbon_get_theme_option('__best_suggestion_boxes_padding_x')."!important; right: initial !important; bottom: initial !important; max-width: calc(100% - 3em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_x').");max-height: calc(100% - 4em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_y').");}</style>";
 		}
 		if(carbon_get_theme_option('__best_suggestion_boxes_position') === 'topright') {
-			echo "<style>html #best-suggestion-boxes-box.suggestion-js-boxes .suggestion-js-boxes__body, html #best-suggestion-boxes-box.suggestion-js-boxes .suggestion-js-boxes__icon {top: ".carbon_get_theme_option('__best_suggestion_boxes_padding_y')."!important; right: ".carbon_get_theme_option('__best_suggestion_boxes_padding_x')."!important; bottom: initial !important; max-width: calc(100% - 3em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_x').");max-height: calc(100% - 4em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_y').");}</style>";
+			echo "<style>html #best-suggestion-boxes.suggestion-js-boxes .suggestion-js-boxes__body, html #best-suggestion-boxes.suggestion-js-boxes .suggestion-js-boxes__icon {top: ".carbon_get_theme_option('__best_suggestion_boxes_padding_y')."!important; right: ".carbon_get_theme_option('__best_suggestion_boxes_padding_x')."!important; bottom: initial !important; max-width: calc(100% - 3em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_x').");max-height: calc(100% - 4em - ".carbon_get_theme_option('__best_suggestion_boxes_padding_y').");}</style>";
 		}
 	}
 	public function __bestSuggestionBoxesChangeTitleSize() {
-		echo "<style>html #best-suggestion-boxes-box.suggestion-js-boxes .suggestion-js-boxes__body__header-title-chat {font-size: ".carbon_get_theme_option('__best_suggestion_boxes_title_size')." !important;}</style>";
+		echo "<style>html #best-suggestion-boxes.suggestion-js-boxes .suggestion-js-boxes__body__header-title-chat {font-size: ".carbon_get_theme_option('__best_suggestion_boxes_title_size')." !important;}</style>";
 	}
 	public function __bestSuggestionBoxesChangeContentSize() {
-		echo "<style>html #best-suggestion-boxes-box.suggestion-js-boxes .suggestion-js-boxes__body__display-chat-item-sms {font-size: ".carbon_get_theme_option('__best_suggestion_boxes_content_size')." !important;}</style>";
+		echo "<style>html #best-suggestion-boxes.suggestion-js-boxes .suggestion-js-boxes__body__display-chat-item-sms {font-size: ".carbon_get_theme_option('__best_suggestion_boxes_content_size')." !important;}</style>";
 	}
 	public function __bestSuggestionBoxesChangeSize() {
-		echo "<style>#best-suggestion-boxes-box {font-size: ".carbon_get_theme_option('__best_suggestion_boxes_size')." !important;}</style>";
+		echo "<style>#best-suggestion-boxes {font-size: ".carbon_get_theme_option('__best_suggestion_boxes_size')." !important;}</style>";
 	}
 	public function __bestSuggestionBoxesChangeStyle() {
 		echo "<style>:root {--best-suggestion-boxes-color: ".carbon_get_theme_option('__best_suggestion_boxes_style')." !important;
 			--best-suggestion-boxes-item-bg: ".carbon_get_theme_option('__best_suggestion_boxes_style')." !important;}@keyframes lift-pulse { 0% { box-shadow: 0 0 0 0 ".self::liftHexToRGB(carbon_get_theme_option('__best_suggestion_boxes_style'),'.5')."; } 100% { box-shadow: 0 0 0 14px rgba(255, 255, 255, 0); } }</style>";
 	}
 	public function __bestSuggestionBoxesChangeLogo() {
-		echo "<style>html #best-suggestion-boxes-box.suggestion-js-boxes .suggestion-js-boxes__body__header-cta-icon-avatar {background-image: url(".carbon_get_theme_option('__best_suggestion_boxes_logo').") !important;}</style>";
+		echo "<style>html #best-suggestion-boxes.suggestion-js-boxes .suggestion-js-boxes__body__header-cta-icon-avatar {background-image: url(".carbon_get_theme_option('__best_suggestion_boxes_logo').") !important;}</style>";
 	}
 	public function __bestSuggestionBoxesChangeTitle() {
-		echo "<script>window.addEventListener('DOMContentLoaded', function(){document.querySelector('#best-suggestion-boxes-box .suggestion-js-boxes__body__header-title-chat').innerHTML = '".carbon_get_theme_option('__best_suggestion_boxes_title')."';})</script>";
+		echo "<script>window.addEventListener('DOMContentLoaded', function(){document.querySelector('#best-suggestion-boxes .suggestion-js-boxes__body__header-title-chat').innerHTML = '".carbon_get_theme_option('__best_suggestion_boxes_title')."';})</script>";
 	}
 
 	public function liftHexToRGB ($hexColor, $animation=1)
