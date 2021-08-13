@@ -7,7 +7,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Best Suggestion Boxes
- * Plugin URI:        https://wordpress.org/plugins/wp-best-suggestion-boxes
+ * Plugin URI:        https://wordpress.org/plugins/best-suggestion-boxes
  * Description:       A Better Way to Connect With Customers. You don't have time to talk with some online customers? This plugin will help you connect with them.
  * Version:           1.0.0
  * Author:            Nguyen Pham
