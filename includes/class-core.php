@@ -6,7 +6,7 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
- * @link       https://baonguyenyam.github.io/cv
+ * @link       https://github.com/wp-best-suggestion-boxes
  * @since      1.0.0
  *
  * @package    Best_Suggestion_Boxes

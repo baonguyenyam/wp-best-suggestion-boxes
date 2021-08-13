@@ -2,7 +2,7 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       https://baonguyenyam.github.io/cv
+ * @link       https://github.com/wp-best-suggestion-boxes
  * @since      1.0.0
  *
  * @package    Best_Suggestion_Boxes
