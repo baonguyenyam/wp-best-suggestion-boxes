@@ -15,11 +15,11 @@
 <div class="wrap">
     <div id="wp-content-editor-tools" class="wp-heading">
         <div class="alignleft">
-            <h2><?= __('Screens and Suggestions', BEST_SUGGESTION_BOXES_DOMAIN )?></h2>
+            <h2><?php esc_html('Screens and Suggestions', BEST_SUGGESTION_BOXES_DOMAIN )?></h2>
         </div>
         <div class="alignright">
-            <a href="admin.php?page=best-suggestion-boxes-screen" class="button button-primary"><?= __('Add New Screen', BEST_SUGGESTION_BOXES_DOMAIN );?></a>
-            <a href="admin.php?page=best-suggestion-boxes-suggest" class="button button-primary"><?= __('Add New Suggest', BEST_SUGGESTION_BOXES_DOMAIN );?></a>
+            <a href="admin.php?page=best-suggestion-boxes-screen" class="button button-primary"><?php esc_html('Add New Screen', BEST_SUGGESTION_BOXES_DOMAIN );?></a>
+            <a href="admin.php?page=best-suggestion-boxes-suggest" class="button button-primary"><?php esc_html('Add New Suggest', BEST_SUGGESTION_BOXES_DOMAIN );?></a>
         </div>
         <div class="clear"></div>
     </div>
@@ -41,8 +41,8 @@ foreach ( $resultsGroup as $groupItem ) {
             <h2><?php echo $groupItem->group_content; ?></h2>
         </div>
         <div class="alignright">
-            <a href="admin.php?page=best-suggestion-boxes-screen&id=<?php echo $groupItem->group_id?>&action=edit"><?= __('Edit', BEST_SUGGESTION_BOXES_DOMAIN )?></a>
-            <a href="admin.php?page=best-suggestion-boxes-screen&id=<?php echo $groupItem->group_id?>&action=delete"><?= __('Delete', BEST_SUGGESTION_BOXES_DOMAIN )?></a>
+            <a href="admin.php?page=best-suggestion-boxes-screen&id=<?php echo $groupItem->group_id?>&action=edit"><?php esc_html('Edit', BEST_SUGGESTION_BOXES_DOMAIN )?></a>
+            <a href="admin.php?page=best-suggestion-boxes-screen&id=<?php echo $groupItem->group_id?>&action=delete"><?php esc_html('Delete', BEST_SUGGESTION_BOXES_DOMAIN )?></a>
         </div>
         <div class="clear"></div>
     </div>
@@ -58,16 +58,16 @@ foreach ( $resultsGroup as $groupItem ) {
         echo '<table class="nguyenapp-table">';
         echo '<thead>
         <tr>
-        <td>'.esc_html__('Suggestions', BEST_SUGGESTION_BOXES_DOMAIN ).'</td>
-        <td width="200">'.esc_html__('Go to', BEST_SUGGESTION_BOXES_DOMAIN ).'</td>
-        <td width="20">'.esc_html__('Edit', BEST_SUGGESTION_BOXES_DOMAIN ).'</td>
-        <td width="20">'.esc_html__('Delete', BEST_SUGGESTION_BOXES_DOMAIN ).'</td>
+        <td>'.esc_html('Suggestions', BEST_SUGGESTION_BOXES_DOMAIN ).'</td>
+        <td width="200">'.esc_html('Go to', BEST_SUGGESTION_BOXES_DOMAIN ).'</td>
+        <td width="20">'.esc_html('Edit', BEST_SUGGESTION_BOXES_DOMAIN ).'</td>
+        <td width="20">'.esc_html('Delete', BEST_SUGGESTION_BOXES_DOMAIN ).'</td>
         </tr>
         </thead>';
             foreach ( $resultsSuggest as $item ) {
                 $screenName = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$tblGroup} WHERE {$tblGroup}.group_id = $item->target_id LIMIT 1"));
             ?>
-                <tr><td><?php echo $item->suggest_content; ?></td><td><?php echo $screenName[0]->group_content ? $screenName[0]->group_content : 'N/A'; ?></td><td><a href="admin.php?page=best-suggestion-boxes-suggest&id=<?php echo $item->suggest_id?>&action=edit"><?= __('Edit', BEST_SUGGESTION_BOXES_DOMAIN )?></a></td><td><a href="admin.php?page=best-suggestion-boxes-suggest&id=<?php echo $item->suggest_id?>&action=delete"><?= __('Delete', BEST_SUGGESTION_BOXES_DOMAIN )?></a></td></tr>
+                <tr><td><?php echo $item->suggest_content; ?></td><td><?php echo $screenName[0]->group_content ? $screenName[0]->group_content : 'N/A'; ?></td><td><a href="admin.php?page=best-suggestion-boxes-suggest&id=<?php echo $item->suggest_id?>&action=edit"><?php esc_html('Edit', BEST_SUGGESTION_BOXES_DOMAIN )?></a></td><td><a href="admin.php?page=best-suggestion-boxes-suggest&id=<?php echo $item->suggest_id?>&action=delete"><?php esc_html('Delete', BEST_SUGGESTION_BOXES_DOMAIN )?></a></td></tr>
             <?php
             }
         echo '</table>';

@@ -2,8 +2,8 @@
 Contributors: baonguyenyam
 Tags: chat, box, message, suggest, tin nhan, nhan tin, mesenger, notification, notify, accountment
 Requires at least: 4.7
-Tested up to: 5.4
-Stable tag: 4.3
+Tested up to: 5.8
+Stable tag: 1.0.0
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -20,8 +20,6 @@ The screenshot is stored in the /assets directory.
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.0 =
 * Support multi-language
-
-= 0.5 =
 * First version.
