@@ -32,7 +32,7 @@ define( 'BEST_SUGGESTION_BOXES_DOMAIN', 'best-suggestion-boxes' );
 define( 'BEST_SUGGESTION_BOXES_NICENAME', 'Best Suggestion Boxes' );
 define( 'BEST_SUGGESTION_BOXES_PREFIX', 'best_suggestion_boxes' );
 define( 'BEST_SUGGESTION_BOXES_VERSION', '1.0.0' );
-define( 'WPLANG', '');
+// define( 'WPLANG', '');
 
 /**
  * The code that runs during plugin activation.
