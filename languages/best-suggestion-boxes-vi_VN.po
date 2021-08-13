@@ -1,7 +1,7 @@
 # Copyright (C) 2021 Nguyen Pham
 msgid ""
 msgstr ""
-"Project-Id-Version: Best Suggestion Boxes\n"
+"Project-Id-Version: Best Suggestion Boxes 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-best-suggestion-boxes\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,7 +28,9 @@ msgstr "Một cách tốt hơn để kết nối với khách hàng. Bạn khôn
 msgid "Nguyen Pham"
 msgstr ""
 
-#: admin/class-admin.php:60 admin/class-admin.php:216 admin/class-admin.php:221
+#: admin/class-admin.php:60 
+#: admin/class-admin.php:216 
+#: admin/class-admin.php:221
 msgid "Settings"
 msgstr "Cài đặt"
 
@@ -36,15 +38,18 @@ msgstr "Cài đặt"
 msgid "Suggestion"
 msgstr "Gợi ý"
 
-#: admin/class-admin.php:201 admin/partials/admin-display.php:21
+#: admin/class-admin.php:201 
+#: admin/partials/admin-display.php:21
 msgid "Add New Screen"
 msgstr "Thêm màn hình mới"
 
-#: admin/class-admin.php:202 admin/partials/admin-display.php:22
+#: admin/class-admin.php:202 
+#: admin/partials/admin-display.php:22
 msgid "Add New Suggest"
 msgstr "Thêm gợi ý mới"
 
-#: admin/class-admin.php:222 admin/class-admin.php:289
+#: admin/class-admin.php:222 
+#: admin/class-admin.php:289
 msgid "Copyright"
 msgstr "Bản quyền"
 
@@ -108,7 +113,8 @@ msgstr "Căn X"
 msgid "Padding Y"
 msgstr "Căn Y"
 
-#: admin/class-admin.php:282 admin/class-admin.php:291
+#: admin/class-admin.php:282 
+#: admin/class-admin.php:291
 msgid "Section Description"
 msgstr "Nội dung "
 
@@ -120,13 +126,16 @@ msgstr "Tác giả"
 msgid "Screens and Suggestions"
 msgstr "Màn hình và gợi ý"
 
-#: admin/partials/admin-display.php:44 admin/partials/admin-display.php:63
+#: admin/partials/admin-display.php:44
+#: admin/partials/admin-display.php:63
 #: admin/partials/admin-display.php:70
 msgid "Edit"
 msgstr "Sửa"
 
-#: admin/partials/admin-display.php:45 admin/partials/admin-display.php:64
-#: admin/partials/admin-display.php:70 admin/partials/screen.php:47
+#: admin/partials/admin-display.php:45
+#: admin/partials/admin-display.php:64
+#: admin/partials/admin-display.php:70
+#: admin/partials/screen.php:47
 #: admin/partials/suggest.php:71
 msgid "Delete"
 msgstr "Xóa"
@@ -147,11 +156,13 @@ msgstr "Tên màn hình"
 msgid "Name"
 msgstr "Tên"
 
-#: admin/partials/screen.php:47 admin/partials/suggest.php:71
+#: admin/partials/screen.php:47
+#: admin/partials/suggest.php:71
 msgid "Submit"
 msgstr "Cập nhật"
 
-#: admin/partials/suggest.php:28 admin/partials/suggest.php:62
+#: admin/partials/suggest.php:28
+#: admin/partials/suggest.php:62
 msgid "Message"
 msgstr "Tin nhắn"
 
