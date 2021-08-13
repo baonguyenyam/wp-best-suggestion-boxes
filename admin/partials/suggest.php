@@ -30,20 +30,20 @@ if(isset($_GET['action']) && ($_GET['action'] === 'edit' || $_GET['action'] === 
 	<div class="form-wrap">
 		<form action="<?php echo esc_attr( admin_url('admin-post.php') ); ?>" id="frm" method="post">
 			<input type="hidden" name="action" value="submit_data" />
-			<input type="hidden" name="type" value="<?=isset($_GET['action'])?$_GET['action']:''?>" />
+			<input type="hidden" name="type" value="<?php echo esc_attr(isset($_GET['action'])?$_GET['action']:'')?>" />
 			<input type="hidden" name="posttype" value="suggest" />
-			<input type="hidden" name="id" value="<?=isset($resultsSuggest->suggest_id)?$resultsSuggest->suggest_id:''?>" />
+			<input type="hidden" name="id" value="<?php echo esc_attr(isset($resultsSuggest->suggest_id)?$resultsSuggest->suggest_id:'')?>" />
 
 			<?php if(isset($_GET['action']) && $_GET['action'] === 'delete') { ?>
 				<div class="form-required term-name-wrap">
-					<label for="groupName"><?=isset($resultsSuggest->suggest_content)?$resultsSuggest->suggest_content:''?></label>
+					<label for="groupName"><?php echo esc_attr(isset($resultsSuggest->suggest_content)?$resultsSuggest->suggest_content:'')?></label>
 				</div>
 			<?php } else { ?>
 				<div class="form-required term-name-wrap">
 					<label for="groupTarget"><?php echo esc_html('Screen', BEST_SUGGESTION_BOXES_DOMAIN )?></label>
 					<select name="groupTarget" id="groupTarget">
 						<?php foreach ( $resultsGroup as $item ) { ?>
-							<option value="<?=$item->group_id?>"<?php echo ($resultsSuggest->group_id === $item->group_id) ? ' selected' : ''?>><?=$item->group_content?></option>
+							<option value="<?php echo esc_attr($item->group_id)?>"<?php echo ($resultsSuggest->group_id === $item->group_id) ? ' selected' : ''?>><?php echo esc_attr($item->group_content)?></option>
 						<?php } ?>
 					</select>
 					<p></p>
@@ -53,7 +53,7 @@ if(isset($_GET['action']) && ($_GET['action'] === 'edit' || $_GET['action'] === 
 					<select name="idTarget" id="idTarget">
 						<option value="0"><?php echo esc_html('None', BEST_SUGGESTION_BOXES_DOMAIN )?></option>
 						<?php foreach ( $resultsGroup as $item ) { ?>
-							<option value="<?=$item->group_id?>"<?php echo ($resultsSuggest->target_id === $item->group_id) ? ' selected' : ''?>><?=$item->group_content?></option>
+							<option value="<?php echo esc_attr($item->group_id)?>"<?php echo ($resultsSuggest->target_id === $item->group_id) ? ' selected' : ''?>><?php echo esc_attr($item->group_content)?></option>
 						<?php } ?>
 					</select>
 					<p></p>
@@ -61,14 +61,14 @@ if(isset($_GET['action']) && ($_GET['action'] === 'edit' || $_GET['action'] === 
 				<div class="form-required term-name-wrap">
 					<label for="groupName"><?php echo esc_html('Message', BEST_SUGGESTION_BOXES_DOMAIN )?></label>
 					<?php
-						$content   = isset($resultsSuggest->suggest_content)?$resultsSuggest->suggest_content:'';
+						$content   = esc_attr(isset($resultsSuggest->suggest_content)?$resultsSuggest->suggest_content:'');
 						$editor_id = 'groupName';
 						wp_editor( $content, $editor_id );
 					?>
 				</div>
 			<?php } ?>
 
-			<p class="submit"><button type="submit" class="button button-primary"><?=$_GET['action'] === 'delete' ? esc_html('Delete', BEST_SUGGESTION_BOXES_DOMAIN ) : esc_html('Submit', BEST_SUGGESTION_BOXES_DOMAIN )?></button></p>
+			<p class="submit"><button type="submit" class="button button-primary"><?php echo (isset($_GET['action']) && $_GET['action'] === 'delete') ? esc_html('Delete', BEST_SUGGESTION_BOXES_DOMAIN ) : esc_html('Submit', BEST_SUGGESTION_BOXES_DOMAIN )?></button></p>
 
 
 			<input type="hidden" name="submitted" id="submitted" value="true" />

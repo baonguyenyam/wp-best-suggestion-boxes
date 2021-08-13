@@ -29,22 +29,22 @@ if(isset($_GET['action']) && ($_GET['action'] === 'edit' || $_GET['action'] === 
 	<div class="form-wrap">
 		<form action="<?php echo esc_attr( admin_url('admin-post.php') ); ?>" id="frm" method="post">
 			<input type="hidden" name="action" value="submit_data" />
-			<input type="hidden" name="type" value="<?=isset($_GET['action'])?$_GET['action']:''?>" />
+			<input type="hidden" name="type" value="<?php echo esc_attr(isset($_GET['action'])?$_GET['action']:'')?>" />
 			<input type="hidden" name="posttype" value="screen" />
-			<input type="hidden" name="id" value="<?=isset($resultsGroup->group_id)?$resultsGroup->group_id:''?>" />
+			<input type="hidden" name="id" value="<?php echo esc_attr(isset($resultsGroup->group_id)?$resultsGroup->group_id:'')?>" />
 
 			<?php if(isset($_GET['action']) && $_GET['action'] === 'delete') { ?>
 				<div class="form-required term-name-wrap">
-					<label for="groupName"><?=isset($resultsGroup->group_content)?$resultsGroup->group_content:''?></label>
+					<label for="groupName"><?php echo esc_attr(isset($resultsGroup->group_content)?$resultsGroup->group_content:'')?></label>
 				</div>
 			<?php } else { ?>
 				<div class="form-required term-name-wrap">
 					<label for="groupName"><?php echo esc_html('Name', BEST_SUGGESTION_BOXES_DOMAIN )?></label>
-					<input name="groupName" id="groupName" type="text" value="<?=isset($resultsGroup->group_content)?$resultsGroup->group_content:''?>" size="40" aria-required="true">
+					<input name="groupName" id="groupName" type="text" value="<?php echo esc_attr(isset($resultsGroup->group_content)?$resultsGroup->group_content:'')?>" size="40" aria-required="true">
 				</div>
 			<?php } ?>
 
-			<p class="submit"><button type="submit" class="button button-primary"><?=$_GET['action'] === 'delete' ? esc_html('Delete', BEST_SUGGESTION_BOXES_DOMAIN ) : esc_html('Submit', BEST_SUGGESTION_BOXES_DOMAIN )?></button></p>
+			<p class="submit"><button type="submit" class="button button-primary"><?php echo ($_GET['action'] === 'delete') ? esc_html('Delete', BEST_SUGGESTION_BOXES_DOMAIN ) : esc_html('Submit', BEST_SUGGESTION_BOXES_DOMAIN )?></button></p>
 
 
 			<input type="hidden" name="submitted" id="submitted" value="true" />
