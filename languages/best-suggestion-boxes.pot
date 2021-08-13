@@ -1,32 +1,27 @@
 # Copyright (C) 2021 Nguyen Pham
 msgid ""
 msgstr ""
-"Project-Id-Version: Best Suggestion Boxes 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-best-"
-"suggestion-boxes\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
-"X-Domain: best-suggestion-boxes\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
+"Project-Id-Version: Best Suggestion Boxes 1.0.0\n"
 "Language-Team: \n"
-"Last-Translator: \n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-# "Language: vi\n"
-"X-Poedit-Language: Vietnamese\n"
-"X-Poedit-Country: Vietnam\n"
+"Language: en_US\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Best Suggestion Boxes
 #: admin/class-admin.php:285
 msgid "Best Suggestion Boxes"
-msgstr "Hộp gợi ý tốt nhất"
+msgstr ""
 
 #. A Better Way to Connect With Customers. You don't have time to talk with some online customers? This plugin will help you connect with them.
 #: admin/class-admin.php:286
 msgid "A Better Way to Connect With Customers. You don't have time to talk with some online customers? This plugin will help you connect with them."
-msgstr "Một cách tốt hơn để kết nối với khách hàng. Bạn không có thời gian để nói chuyện với một số khách hàng trực tuyến? Plugin này sẽ giúp bạn kết nối với họ."
+msgstr ""
 
 #. Author of the plugin
 msgid "Nguyen Pham"
@@ -34,139 +29,139 @@ msgstr ""
 
 #: admin/class-admin.php:60 admin/class-admin.php:216 admin/class-admin.php:221
 msgid "Settings"
-msgstr "Cài đặt"
+msgstr ""
 
 #: admin/class-admin.php:198
 msgid "Suggestion"
-msgstr "Gợi ý"
+msgstr ""
 
 #: admin/class-admin.php:201 admin/partials/admin-display.php:21
 msgid "Add New Screen"
-msgstr "Thêm màn hình mới"
+msgstr ""
 
 #: admin/class-admin.php:202 admin/partials/admin-display.php:22
 msgid "Add New Suggest"
-msgstr "Thêm gợi ý mới"
+msgstr ""
 
 #: admin/class-admin.php:222 admin/class-admin.php:289
 msgid "Copyright"
-msgstr "Bản quyền"
+msgstr ""
 
 #: admin/class-admin.php:237
 msgid "Enable"
-msgstr "Kích hoạt"
+msgstr ""
 
 #: admin/class-admin.php:239
 msgid "Title"
-msgstr "Tiêu đề"
+msgstr ""
 
 #: admin/class-admin.php:240
 msgid "Chat with us!"
-msgstr "Liên lạc chúng tôi!"
+msgstr ""
 
 #: admin/class-admin.php:243
 msgid "Logo"
-msgstr "Biểu tượng"
+msgstr ""
 
 #: admin/class-admin.php:247
 msgid "Style color"
-msgstr "Phong cách"
+msgstr ""
 
 #: admin/class-admin.php:250
 msgid "Icon Size"
-msgstr "Kích thước biểu tượng"
+msgstr ""
 
 #: admin/class-admin.php:253
 msgid "Title Size"
-msgstr "Kích thước tiêu đề"
+msgstr ""
 
 #: admin/class-admin.php:256
 msgid "Font Size"
-msgstr "Cỡ chữ"
+msgstr ""
 
 #: admin/class-admin.php:259
 msgid "Position"
-msgstr "Vị trí"
+msgstr ""
 
 #: admin/class-admin.php:261
 msgid "Bottom Right"
-msgstr "Dưới Phải"
+msgstr ""
 
 #: admin/class-admin.php:262
 msgid "Bottom Left"
-msgstr "Dưới Trái"
+msgstr ""
 
 #: admin/class-admin.php:263
 msgid "Top Right"
-msgstr "Trên Phải"
+msgstr ""
 
 #: admin/class-admin.php:264
 msgid "Top Left"
-msgstr "Trên Trái"
+msgstr ""
 
 #: admin/class-admin.php:268
 msgid "Padding X"
-msgstr "Căn X"
+msgstr ""
 
 #: admin/class-admin.php:271
 msgid "Padding Y"
-msgstr "Căn Y"
+msgstr ""
 
 #: admin/class-admin.php:282 admin/class-admin.php:291
 msgid "Section Description"
-msgstr "Nội dung"
+msgstr ""
 
 #: admin/class-admin.php:294
 msgid "Author"
-msgstr "Tác giả"
+msgstr ""
 
 #: admin/partials/admin-display.php:18
 msgid "Screens and Suggestions"
-msgstr "Màn hình và gợi ý"
+msgstr ""
 
 #: admin/partials/admin-display.php:44 admin/partials/admin-display.php:63
 #: admin/partials/admin-display.php:70
 msgid "Edit"
-msgstr "Sửa"
+msgstr ""
 
 #: admin/partials/admin-display.php:45 admin/partials/admin-display.php:64
 #: admin/partials/admin-display.php:70 admin/partials/screen.php:47
 #: admin/partials/suggest.php:71
 msgid "Delete"
-msgstr "Xóa"
+msgstr ""
 
 #: admin/partials/admin-display.php:61
 msgid "Suggestions"
-msgstr "Các gợi ý"
+msgstr ""
 
 #: admin/partials/admin-display.php:62
 msgid "Go to"
-msgstr "Đi đến"
+msgstr ""
 
 #: admin/partials/screen.php:27
 msgid "Screen's name"
-msgstr "Tên màn hình"
+msgstr ""
 
 #: admin/partials/screen.php:42
 msgid "Name"
-msgstr "Tên"
+msgstr ""
 
 #: admin/partials/screen.php:47 admin/partials/suggest.php:71
 msgid "Submit"
-msgstr "Cập nhật"
+msgstr ""
 
 #: admin/partials/suggest.php:28 admin/partials/suggest.php:62
 msgid "Message"
-msgstr "Tin nhắn"
+msgstr ""
 
 #: admin/partials/suggest.php:43
 msgid "Screen"
-msgstr "Màn hình"
+msgstr ""
 
 #: admin/partials/suggest.php:52
 msgid "Click go to screen"
-msgstr "Nhấp và di chuyển đến màn hình"
+msgstr ""
 
 #: admin/partials/suggest.php:54
 msgid "None"
-msgstr "Không có gì"
+msgstr ""
