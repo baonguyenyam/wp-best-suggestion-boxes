@@ -57,7 +57,7 @@ class Best_Suggestion_Boxes_Admin {
 
 	public function __suggestion_boxesadd_setting_link_chat( $links, $file ) {
 		if( $file === 'wp-best-suggestion-boxes/nguyen-app.php' ){
-			$link = '<a href="'.admin_url('admin.php?page=crb_carbon_fields_container_best_suggestion_boxes_settings.php').'">'.__('Settings', BEST_SUGGESTION_BOXES_DOMAIN ).'</a>';
+			$link = '<a href="'.admin_url('admin.php?page=crb_carbon_fields_container_settings.php').'">'.__('Settings', BEST_SUGGESTION_BOXES_DOMAIN ).'</a>';
 			array_unshift( $links, $link ); 
 		}
 		return $links;
