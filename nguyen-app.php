@@ -1,12 +1,5 @@
 <?php
-
 /**
- * The plugin bootstrap file
- *
- * This file is read by WordPress to generate the plugin information in the plugin
- * admin area. This file also includes all of the dependencies used by the plugin,
- * registers the activation and deactivation functions, and defines a function
- * that starts the plugin.
  *
  * @link              https://baonguyenyam.github.io/
  * @since             1.0.0
@@ -39,6 +32,7 @@ define( 'BEST_SUGGESTION_BOXES_DOMAIN', 'best-suggestion-boxes' );
 define( 'BEST_SUGGESTION_BOXES_NICENAME', 'Best Suggestion Boxes' );
 define( 'BEST_SUGGESTION_BOXES_PREFIX', 'best_suggestion_boxes' );
 define( 'BEST_SUGGESTION_BOXES_VERSION', '1.0.0' );
+define( 'WPLANG', '');
 
 /**
  * The code that runs during plugin activation.

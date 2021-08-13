@@ -12,7 +12,6 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
 
 #. Best Suggestion Boxes
 #: admin/class-admin.php:285

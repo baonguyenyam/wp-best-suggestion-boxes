@@ -16,20 +16,12 @@ Best Suggestion Boxes is a Better Way to Connect With Customers. You don't have 
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is stored in the /assets directory.
-2. This is the second screen shot
+The screenshot is stored in the /assets directory.
 
 == Changelog ==
 
 = 1.0 =
-* A change since the previous version.
-* Another change.
+* Support multi-language
 
 = 0.5 =
-* List versions from most recent at top to oldest at bottom.
-
-== Upgrade Notice ==
-
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
-
+* First version.
