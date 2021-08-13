@@ -203,13 +203,13 @@ class Best_Suggestion_Boxes_Admin {
 
 	}
 	public function ___displayPluginAdminDashboard() {
-		require_once 'partials/admin-display.php';
+		require_once plugin_dir_path( __FILE__ ) . 'partials/admin-display.php';
 	}
 	public function ___displayPluginAdminAddNewScreen() {
-		require_once 'partials/screen.php';
+		require_once plugin_dir_path( __FILE__ ) . 'partials/screen.php';
 	}
 	public function ___displayPluginAdminAddNewSuggest() {
-		require_once 'partials/suggest.php';
+		require_once plugin_dir_path( __FILE__ ) . 'partials/suggest.php';
 	}
 
 	public function ___app_option_attach_theme_options() {
