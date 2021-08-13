@@ -24,7 +24,7 @@ if(isset($_GET['action']) && ($_GET['action'] === 'edit' || $_GET['action'] === 
 
 ?>
 <div class="wrap">
-	<h1><?php esc_html('Screen\'s name', BEST_SUGGESTION_BOXES_DOMAIN )?></h1>
+	<h1><?php echo esc_html('Screen\'s name', BEST_SUGGESTION_BOXES_DOMAIN )?></h1>
 
 	<div class="form-wrap">
 		<form action="<?php echo esc_attr( admin_url('admin-post.php') ); ?>" id="frm" method="post">
@@ -39,7 +39,7 @@ if(isset($_GET['action']) && ($_GET['action'] === 'edit' || $_GET['action'] === 
 				</div>
 			<?php } else { ?>
 				<div class="form-required term-name-wrap">
-					<label for="groupName"><?php esc_html('Name', BEST_SUGGESTION_BOXES_DOMAIN )?></label>
+					<label for="groupName"><?php echo esc_html('Name', BEST_SUGGESTION_BOXES_DOMAIN )?></label>
 					<input name="groupName" id="groupName" type="text" value="<?=isset($resultsGroup->group_content)?$resultsGroup->group_content:''?>" size="40" aria-required="true">
 				</div>
 			<?php } ?>
