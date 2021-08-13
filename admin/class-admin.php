@@ -57,7 +57,7 @@ class Best_Suggestion_Boxes_Admin {
 
 	public function __suggestion_boxesadd_setting_link_chat( $links, $file ) {
 		if( $file === 'wp-best-suggestion-boxes/nguyen-app.php' ){
-			$link = '<a href="'.admin_url('admin.php?page=crb_carbon_fields_container_settings.php').'">'.esc_html('Settings', BEST_SUGGESTION_BOXES_DOMAIN ).'</a>';
+			$link = '<a href="'.admin_url('admin.php?page=crb_carbon_fields_container_settings.php').'">'.esc_html__('Settings', BEST_SUGGESTION_BOXES_DOMAIN ).'</a>';
 			array_unshift( $links, $link ); 
 		}
 		return $links;
@@ -195,11 +195,11 @@ class Best_Suggestion_Boxes_Admin {
 
 	public function ___addPluginAdminMenu() {
 		//add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function, $icon_url, $position );
-		add_menu_page(  $this->liftChat['nicename'],  esc_html( 'Suggestions', BEST_SUGGESTION_BOXES_DOMAIN ) , 'administrator', $this->liftChat['domain'], array( $this, '___displayPluginAdminDashboard' ), 'dashicons-admin-comments', 30 );
+		add_menu_page(  $this->liftChat['nicename'],  esc_html__( 'Suggestions', BEST_SUGGESTION_BOXES_DOMAIN ) , 'administrator', $this->liftChat['domain'], array( $this, '___displayPluginAdminDashboard' ), 'dashicons-admin-comments', 30 );
 		
 		//add_submenu_page( '$parent_slug, $page_title, $menu_title, $capability, $menu_slug, $function );
-		add_submenu_page( null, esc_html('Add New Screen', BEST_SUGGESTION_BOXES_DOMAIN ), esc_html('Add New Screen', BEST_SUGGESTION_BOXES_DOMAIN ), 'administrator', $this->liftChat['domain'].'-screen', array( $this, '___displayPluginAdminAddNewScreen' ));
-		add_submenu_page( null, esc_html('Add New Suggest', BEST_SUGGESTION_BOXES_DOMAIN ), esc_html('Add New Suggest', BEST_SUGGESTION_BOXES_DOMAIN ), 'administrator', $this->liftChat['domain'].'-suggest', array( $this, '___displayPluginAdminAddNewSuggest' ));
+		add_submenu_page( null, esc_html__('Add New Screen', BEST_SUGGESTION_BOXES_DOMAIN ), esc_html__('Add New Screen', BEST_SUGGESTION_BOXES_DOMAIN ), 'administrator', $this->liftChat['domain'].'-screen', array( $this, '___displayPluginAdminAddNewScreen' ));
+		add_submenu_page( null, esc_html__('Add New Suggest', BEST_SUGGESTION_BOXES_DOMAIN ), esc_html__('Add New Suggest', BEST_SUGGESTION_BOXES_DOMAIN ), 'administrator', $this->liftChat['domain'].'-suggest', array( $this, '___displayPluginAdminAddNewSuggest' ));
 
 	}
 	public function ___displayPluginAdminDashboard() {
@@ -213,13 +213,13 @@ class Best_Suggestion_Boxes_Admin {
 	}
 
 	public function ___app_option_attach_theme_options() {
-		$basic_options_container =  Container::make( 'theme_options', esc_html( 'Settings', BEST_SUGGESTION_BOXES_DOMAIN ) )
+		$basic_options_container =  Container::make( 'theme_options', esc_html__( 'Settings', BEST_SUGGESTION_BOXES_DOMAIN ) )
 		->set_page_parent(  $this->liftChat['domain'] )
 			// ->set_page_menu_title( 'App Settings' )
 			// ->set_page_menu_position(2)
 			// ->set_icon( 'dashicons-admin-generic' )
-			->add_tab( esc_html( 'Settings', BEST_SUGGESTION_BOXES_DOMAIN ), self::__chatApp() )
-			->add_tab( esc_html( 'Copyright', BEST_SUGGESTION_BOXES_DOMAIN ), self::__copyright() )
+			->add_tab( esc_html__( 'Settings', BEST_SUGGESTION_BOXES_DOMAIN ), self::__chatApp() )
+			->add_tab( esc_html__( 'Copyright', BEST_SUGGESTION_BOXES_DOMAIN ), self::__copyright() )
 			;
 	}
 	
@@ -234,41 +234,41 @@ class Best_Suggestion_Boxes_Admin {
 			Field::make(
 			'checkbox', 
 			'___best_suggestion_boxes_enable',
-			esc_html('Enable', BEST_SUGGESTION_BOXES_DOMAIN)
+			esc_html__('Enable', BEST_SUGGESTION_BOXES_DOMAIN)
 			)->set_option_value( 'yes' ),
-			Field::make( 'text', '__best_suggestion_boxes_title', esc_html( 'Title', BEST_SUGGESTION_BOXES_DOMAIN ) )
-			->set_default_value(esc_html('Chat with us!', BEST_SUGGESTION_BOXES_DOMAIN ))
+			Field::make( 'text', '__best_suggestion_boxes_title', esc_html__( 'Title', BEST_SUGGESTION_BOXES_DOMAIN ) )
+			->set_default_value(esc_html__('Chat with us!', BEST_SUGGESTION_BOXES_DOMAIN ))
 			->set_classes( 'lift-cabon-width-class' )
 			->set_width(100),
-			Field::make( 'image', '__best_suggestion_boxes_logo', esc_html( 'Logo', BEST_SUGGESTION_BOXES_DOMAIN ) )
+			Field::make( 'image', '__best_suggestion_boxes_logo', esc_html__( 'Logo', BEST_SUGGESTION_BOXES_DOMAIN ) )
 			->set_value_type( 'url' )
             ->set_visible_in_rest_api( $visible = true )
 			->set_width(100),
-			Field::make( 'color', '__best_suggestion_boxes_style', esc_html( 'Style color', BEST_SUGGESTION_BOXES_DOMAIN ) )
+			Field::make( 'color', '__best_suggestion_boxes_style', esc_html__( 'Style color', BEST_SUGGESTION_BOXES_DOMAIN ) )
 			->set_alpha_enabled( true )
 			->set_width(100),	
-			Field::make( 'text', '__best_suggestion_boxes_size', esc_html( 'Icon Size', BEST_SUGGESTION_BOXES_DOMAIN ) )
+			Field::make( 'text', '__best_suggestion_boxes_size', esc_html__( 'Icon Size', BEST_SUGGESTION_BOXES_DOMAIN ) )
 			->set_default_value('16px')
 			->set_width(12.5),
-			Field::make( 'text', '__best_suggestion_boxes_title_size', esc_html( 'Title Size', BEST_SUGGESTION_BOXES_DOMAIN ) )
+			Field::make( 'text', '__best_suggestion_boxes_title_size', esc_html__( 'Title Size', BEST_SUGGESTION_BOXES_DOMAIN ) )
 			->set_default_value('24px')
 			->set_width(12.5),
-			Field::make( 'text', '__best_suggestion_boxes_content_size', esc_html( 'Font Size', BEST_SUGGESTION_BOXES_DOMAIN ) )
+			Field::make( 'text', '__best_suggestion_boxes_content_size', esc_html__( 'Font Size', BEST_SUGGESTION_BOXES_DOMAIN ) )
 			->set_default_value('16px')
 			->set_width(12.5),
-			Field::make( 'select', '__best_suggestion_boxes_position', esc_html( 'Position', BEST_SUGGESTION_BOXES_DOMAIN ) )
+			Field::make( 'select', '__best_suggestion_boxes_position', esc_html__( 'Position', BEST_SUGGESTION_BOXES_DOMAIN ) )
 			->add_options( array(
-				'bottomright' => esc_html( 'Bottom Right', BEST_SUGGESTION_BOXES_DOMAIN ),
-				'bottomleft' => esc_html( 'Bottom Left', BEST_SUGGESTION_BOXES_DOMAIN ),
-				'topright' => esc_html( 'Top Right', BEST_SUGGESTION_BOXES_DOMAIN ),
-				'topleft' => esc_html( 'Top Left', BEST_SUGGESTION_BOXES_DOMAIN ),
+				'bottomright' => esc_html__( 'Bottom Right', BEST_SUGGESTION_BOXES_DOMAIN ),
+				'bottomleft' => esc_html__( 'Bottom Left', BEST_SUGGESTION_BOXES_DOMAIN ),
+				'topright' => esc_html__( 'Top Right', BEST_SUGGESTION_BOXES_DOMAIN ),
+				'topleft' => esc_html__( 'Top Left', BEST_SUGGESTION_BOXES_DOMAIN ),
 			) )
 			->set_default_value('bottomright')
 			->set_width(12.5),
-			Field::make( 'text', '__best_suggestion_boxes_padding_x', esc_html( 'Padding X', BEST_SUGGESTION_BOXES_DOMAIN ) )
+			Field::make( 'text', '__best_suggestion_boxes_padding_x', esc_html__( 'Padding X', BEST_SUGGESTION_BOXES_DOMAIN ) )
 			->set_default_value('2em')
 			->set_width(12.5),
-			Field::make( 'text', '__best_suggestion_boxes_padding_y', esc_html( 'Padding Y', BEST_SUGGESTION_BOXES_DOMAIN ) )
+			Field::make( 'text', '__best_suggestion_boxes_padding_y', esc_html__( 'Padding Y', BEST_SUGGESTION_BOXES_DOMAIN ) )
 			->set_default_value('2em')
 			->set_width(12.5),
 		);
@@ -279,19 +279,19 @@ class Best_Suggestion_Boxes_Admin {
 		$data = array();
 		$data = array(
 	
-			Field::make( 'html', 'crb_html_2', esc_html( 'Section Description', BEST_SUGGESTION_BOXES_DOMAIN ) )
+			Field::make( 'html', 'crb_html_2', esc_html__( 'Section Description', BEST_SUGGESTION_BOXES_DOMAIN ) )
 					->set_html('
 					
-					<h1>'.esc_html('Best Suggestion Boxes', BEST_SUGGESTION_BOXES_DOMAIN ).'</h1>
-					<p>'.esc_html('A Better Way to Connect With Customers. You don\'t have time to talk with some online customers? This plugin will help you connect with them.', BEST_SUGGESTION_BOXES_DOMAIN ).'</p>
+					<h1>'.esc_html__('Best Suggestion Boxes', BEST_SUGGESTION_BOXES_DOMAIN ).'</h1>
+					<p>'.esc_html__('A Better Way to Connect With Customers. You don\'t have time to talk with some online customers? This plugin will help you connect with them.', BEST_SUGGESTION_BOXES_DOMAIN ).'</p>
 					
 					'),
-					Field::make( 'separator', 'crb_separator_1', esc_html( 'Copyright', BEST_SUGGESTION_BOXES_DOMAIN ) ),
+					Field::make( 'separator', 'crb_separator_1', esc_html__( 'Copyright', BEST_SUGGESTION_BOXES_DOMAIN ) ),
 
-			Field::make( 'html', 'crb_html_1', esc_html( 'Section Description', BEST_SUGGESTION_BOXES_DOMAIN ) )
+			Field::make( 'html', 'crb_html_1', esc_html__( 'Section Description', BEST_SUGGESTION_BOXES_DOMAIN ) )
 					->set_html('
 					
-					<p style="margin-top:0;margin-bottom:0"><strong>'.esc_html( 'Author', BEST_SUGGESTION_BOXES_DOMAIN ).':</strong> <a href="https://baonguyenyam.github.io/" target="_blank">Nguyen Pham</a></p>
+					<p style="margin-top:0;margin-bottom:0"><strong>'.esc_html__( 'Author', BEST_SUGGESTION_BOXES_DOMAIN ).':</strong> <a href="https://baonguyenyam.github.io/" target="_blank">Nguyen Pham</a></p>
 					
 					'),
 	

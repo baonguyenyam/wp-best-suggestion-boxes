@@ -24,7 +24,7 @@ if(isset($_GET['action']) && ($_GET['action'] === 'edit' || $_GET['action'] === 
 
 ?>
 <div class="wrap">
-	<h1><?php echo esc_html('Screen\'s name', BEST_SUGGESTION_BOXES_DOMAIN )?></h1>
+	<h1><?php echo esc_html__('Screen\'s name', BEST_SUGGESTION_BOXES_DOMAIN )?></h1>
 
 	<div class="form-wrap">
 		<form action="<?php echo esc_attr( admin_url('admin-post.php') ); ?>" id="frm" method="post">
@@ -39,12 +39,12 @@ if(isset($_GET['action']) && ($_GET['action'] === 'edit' || $_GET['action'] === 
 				</div>
 			<?php } else { ?>
 				<div class="form-required term-name-wrap">
-					<label for="groupName"><?php echo esc_html('Name', BEST_SUGGESTION_BOXES_DOMAIN )?></label>
+					<label for="groupName"><?php echo esc_html__('Name', BEST_SUGGESTION_BOXES_DOMAIN )?></label>
 					<input name="groupName" id="groupName" type="text" value="<?php echo esc_attr(isset($resultsGroup->group_content)?$resultsGroup->group_content:'')?>" size="40" aria-required="true">
 				</div>
 			<?php } ?>
 
-			<p class="submit"><button type="submit" class="button button-primary"><?php echo ($_GET['action'] === 'delete') ? esc_html('Delete', BEST_SUGGESTION_BOXES_DOMAIN ) : esc_html('Submit', BEST_SUGGESTION_BOXES_DOMAIN )?></button></p>
+			<p class="submit"><button type="submit" class="button button-primary"><?php echo ($_GET['action'] === 'delete') ? esc_html__('Delete', BEST_SUGGESTION_BOXES_DOMAIN ) : esc_html__('Submit', BEST_SUGGESTION_BOXES_DOMAIN )?></button></p>
 
 
 			<input type="hidden" name="submitted" id="submitted" value="true" />
