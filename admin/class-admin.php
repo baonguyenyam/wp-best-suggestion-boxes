@@ -155,6 +155,7 @@ class Best_Suggestion_Boxes_Admin {
 					array( '%s' ),
 				);
 			}
+			wp_redirect('admin.php?page=best-suggestion-boxes');
 		}
 
 		if($posttype === 'screen') {
@@ -186,10 +187,9 @@ class Best_Suggestion_Boxes_Admin {
 					array( '%s' ),
 				);
 			}
+			wp_redirect('admin.php?page=best-suggestion-boxes');
 		}
 	
-		wp_redirect('admin.php?page=best-suggestion-boxes');
-		// wp_redirect($_SERVER["HTTP_REFERER"]);
 	}
 
 
