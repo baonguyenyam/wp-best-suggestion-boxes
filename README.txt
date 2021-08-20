@@ -22,4 +22,5 @@ The screenshot is stored in the /assets directory.
 
 = 1.0.0 =
 * Support multi-language
+= 0.5.0 =
 * First version.
