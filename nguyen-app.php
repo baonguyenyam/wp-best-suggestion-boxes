@@ -11,7 +11,7 @@
  * Description:       A Better Way to Connect With Customers. You don't have time to talk with some online customers? This plugin will help you connect with them.
  * Version:           1.0.0
  * Author:            Nguyen Pham
- * Author URI:        https://github.com/wp-best-suggestion-boxes
+ * Author URI:        https://github.com/baonguyenyam/wp-best-suggestion-boxes
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       best-suggestion-boxes
