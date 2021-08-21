@@ -98,7 +98,7 @@ class Best_Suggestion_Boxes_Activator {
 				'suggest_content' => 'Hello', 
 				'group_id' => 1,
 				'target_id' => 2
-			),
+			)
 		);
 		$wpdb->insert( 
 			$tblSuggest, 
@@ -108,7 +108,7 @@ class Best_Suggestion_Boxes_Activator {
 				'suggest_content' => 'Hello 2', 
 				'group_id' => 1,
 				'target_id' => 2
-			),
+			)
 		);
 		$wpdb->insert( 
 			$tblSuggest, 
@@ -118,7 +118,7 @@ class Best_Suggestion_Boxes_Activator {
 				'suggest_content' => 'Hello 3', 
 				'group_id' => 2,
 				'target_id' => 0
-			),
+			)
 		);
 		$wpdb->insert( 
 			$tblSuggest, 
@@ -128,7 +128,7 @@ class Best_Suggestion_Boxes_Activator {
 				'suggest_content' => 'Hello 4', 
 				'group_id' => 2,
 				'target_id' => 0
-			),
+			)
 		);
 	}
 

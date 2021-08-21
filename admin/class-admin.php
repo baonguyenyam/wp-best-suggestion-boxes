@@ -132,7 +132,7 @@ class Best_Suggestion_Boxes_Admin {
 							'group_id' => $groupTarget,
 							'target_id' => $idTarget,
 						),
-						array('suggest_id'=>$id),
+						array('suggest_id'=>$id)
 					);
 				}
 				if($type === 'delete') {
@@ -141,7 +141,7 @@ class Best_Suggestion_Boxes_Admin {
 						array(
 							'suggest_id'=> $id
 						),
-						array('%d'),
+						array('%d')
 					);
 				}
 			} else {
@@ -152,7 +152,7 @@ class Best_Suggestion_Boxes_Admin {
 						'group_id' => $groupTarget,
 						'target_id' => $idTarget,
 					),
-					array( '%s' ),
+					array( '%s' )
 				);
 			}
 			wp_redirect('admin.php?page=best-suggestion-boxes');
@@ -166,7 +166,7 @@ class Best_Suggestion_Boxes_Admin {
 						array(
 							'group_content'=> $inputValue
 						),
-						array('group_id'=>$id),
+						array('group_id'=>$id)
 					);
 				}
 				if($type === 'delete') {
@@ -175,7 +175,7 @@ class Best_Suggestion_Boxes_Admin {
 						array(
 							'group_id'=> $id
 						),
-						array('%d'),
+						array('%d')
 					);
 				}
 			} else {
@@ -184,7 +184,7 @@ class Best_Suggestion_Boxes_Admin {
 					array( 
 						'group_content' => $inputValue
 					),
-					array( '%s' ),
+					array( '%s' )
 				);
 			}
 			wp_redirect('admin.php?page=best-suggestion-boxes');
