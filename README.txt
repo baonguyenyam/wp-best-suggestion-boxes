@@ -14,6 +14,21 @@ A Better Way to Connect With Customers. You don't have time to talk with some on
 
 Best Suggestion Boxes is a Better Way to Connect With Customers. You don't have time to talk with some online customers? This plugin will help you connect with them.
 
+== Installation ==
+
+= From WordPress backend =
+
+1. Navigate to Plugins -> Add new.
+2. Click the button "Upload Plugin" next to "Add plugins" title.
+3. Upload the downloaded zip file and activate it.
+
+= Direct upload =
+
+1. Upload the downloaded zip file into your `wp-content/plugins/` folder.
+2. Unzip the uploaded zip file.
+3. Navigate to Plugins menu on your WordPress admin area.
+4. Activate this plugin.
+
 == Screenshots ==
 
 The screenshot is stored in the /assets directory.
