@@ -9,7 +9,7 @@
  * Plugin Name:       Best Suggestion Boxes
  * Plugin URI:        https://wow-wp.com
  * Description:       A Better Way to Connect With Customers. You don't have time to talk with some online customers? This plugin will help you connect with them.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Nguyen Pham
  * Author URI:        https://github.com/baonguyenyam/wp-best-suggestion-boxes
  * License:           GPL-2.0+
@@ -31,7 +31,7 @@ if ( ! defined( 'WPINC' ) ) {
 define( 'BEST_SUGGESTION_BOXES_DOMAIN', 'best-suggestion-boxes' );
 define( 'BEST_SUGGESTION_BOXES_NICENAME', 'Best Suggestion Boxes' );
 define( 'BEST_SUGGESTION_BOXES_PREFIX', 'best_suggestion_boxes' );
-define( 'BEST_SUGGESTION_BOXES_VERSION', '1.0.0' );
+define( 'BEST_SUGGESTION_BOXES_VERSION', '1.0.1' );
 
 /**
  * The code that runs during plugin activation.
