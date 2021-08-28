@@ -6,7 +6,7 @@
  * @package           BEST_SUGGESTION_BOXES
  *
  * @wordpress-plugin
- * Plugin Name:       Best Suggestion Boxes
+ * Plugin Name:       WOW Best Suggestion Boxes
  * Plugin URI:        https://wow-wp.com
  * Description:       A Better Way to Connect With Customers. You don't have time to talk with some online customers? This plugin will help you connect with them.
  * Version:           1.0.1
