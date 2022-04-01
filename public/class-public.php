@@ -152,8 +152,8 @@ class Best_Suggestion_Boxes_Public {
 		echo "<style>#best-suggestion-boxes {font-size: ".carbon_get_theme_option('__best_suggestion_boxes_size')." !important;}</style>";
 	}
 	public function __bestSuggestionBoxesChangeStyle() {
-		echo "<style>:root {--best-suggestion-boxes-color: ".carbon_get_theme_option('__best_suggestion_boxes_style')." !important;
-			--best-suggestion-boxes-item-bg: ".carbon_get_theme_option('__best_suggestion_boxes_style')." !important;}@keyframes lift-pulse { 0% { box-shadow: 0 0 0 0 ".self::liftHexToRGB(carbon_get_theme_option('__best_suggestion_boxes_style'),'.5')."; } 100% { box-shadow: 0 0 0 14px rgba(255, 255, 255, 0); } }</style>";
+		echo "<style>:root {--suggestion-boxes-color: ".carbon_get_theme_option('__best_suggestion_boxes_style')." !important;
+			--suggestion-boxes-item-bg: ".carbon_get_theme_option('__best_suggestion_boxes_style')." !important;}@keyframes lift-pulse { 0% { box-shadow: 0 0 0 0 ".self::liftHexToRGB(carbon_get_theme_option('__best_suggestion_boxes_style'),'.5')."; } 100% { box-shadow: 0 0 0 14px rgba(255, 255, 255, 0); } }</style>";
 	}
 	public function __bestSuggestionBoxesChangeLogo() {
 		echo "<style>html #best-suggestion-boxes.suggestion-js-boxes .suggestion-js-boxes__body__header-cta-icon-avatar {background-image: url(".carbon_get_theme_option('__best_suggestion_boxes_logo').") !important;}</style>";
